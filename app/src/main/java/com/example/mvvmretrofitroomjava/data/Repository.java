@@ -55,11 +55,10 @@ public class Repository {
                     roomBookCount = count;
                     BaseModel model = retrofitModel;
                     if(count > 0) model = roomModel;
-                    model.reqBookList(ldBooks);
-                    return count;
+                    return model;
                 })
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe();
+                .subscribe(model -> model.reqBookList(ldBooks));
     }
 
 }
