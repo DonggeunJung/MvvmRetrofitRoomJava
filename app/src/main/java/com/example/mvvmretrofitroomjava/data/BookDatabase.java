@@ -14,12 +14,10 @@ public abstract class BookDatabase extends RoomDatabase {
 
     public static BookDatabase getInstance(Context context) {
         if(instance == null) {
-            //synchronized (BookDatabase.class) {
-                instance = Room.databaseBuilder(
-                        context.getApplicationContext(),
-                        BookDatabase.class, "book_database")
-                        .build();
-            //}
+            instance = Room.databaseBuilder(
+                    context.getApplicationContext(),
+                    BookDatabase.class, "book_database")
+                    .build();
         }
         return instance;
     }

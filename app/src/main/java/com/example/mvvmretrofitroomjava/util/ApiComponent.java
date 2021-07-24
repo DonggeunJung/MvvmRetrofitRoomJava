@@ -1,7 +1,8 @@
 package com.example.mvvmretrofitroomjava.util;
 
 import com.example.mvvmretrofitroomjava.data.Api;
-import com.example.mvvmretrofitroomjava.data.Repository;
+import com.example.mvvmretrofitroomjava.data.RetrofitModel;
+
 import javax.inject.Singleton;
 import dagger.Component;
 
@@ -15,5 +16,5 @@ import dagger.Component;
 public interface ApiComponent {
     Api provideApi();
 
-    void inject(Repository repository);
+    void inject(RetrofitModel retrofitModel);
 }

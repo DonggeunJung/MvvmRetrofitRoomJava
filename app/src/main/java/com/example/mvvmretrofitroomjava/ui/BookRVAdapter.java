@@ -25,11 +25,11 @@ public class BookRVAdapter extends RecyclerView.Adapter<BookRVAdapter.BookVH> {
         this.parent = parent;
         instance = this;
 
-        // make School simple data list Observer object
+        // make Book list Observer object
         final Observer<List<Book>> booksObserver = new Observer<List<Book>>() {
             @Override
-            public void onChanged(@Nullable final List<Book> schools) {
-                // When School simple data list is changed update RecyclerView
+            public void onChanged(@Nullable final List<Book> bookList) {
+                // When Book list is changed update RecyclerView
                 instance.notifyDataSetChanged();
             }
         };
@@ -39,7 +39,7 @@ public class BookRVAdapter extends RecyclerView.Adapter<BookRVAdapter.BookVH> {
         // Send Observer object to ViewModel
         viewModel.getBooks().observe(parent, booksObserver);
         // Request Card data list to Repository
-        viewModel.reqBooks();
+        viewModel.reqBooks(parent);
     }
 
     // Return list items count

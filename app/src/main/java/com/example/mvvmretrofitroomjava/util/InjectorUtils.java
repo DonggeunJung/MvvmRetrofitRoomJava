@@ -1,9 +1,8 @@
 package com.example.mvvmretrofitroomjava.util;
 
-import com.example.mvvmretrofitroomjava.App;
-import com.example.mvvmretrofitroomjava.data.BookDao;
-import com.example.mvvmretrofitroomjava.data.BookDatabase;
 import com.example.mvvmretrofitroomjava.data.Repository;
+import com.example.mvvmretrofitroomjava.data.RetrofitModel;
+import com.example.mvvmretrofitroomjava.data.RoomModel;
 
 public class InjectorUtils {
 
@@ -11,8 +10,8 @@ public class InjectorUtils {
 
     public static ViewModelFactory provideViewModelFactory() {
         if(viewModelFactory == null) {
-            BookDao dao = BookDatabase.getInstance(App.context).dao();
-            Repository repository = Repository.getInstance(dao);
+            Repository repository = Repository.getInstance(
+                    RetrofitModel.getInstance(), RoomModel.getInstance());
             viewModelFactory = new ViewModelFactory(repository);
         }
         return viewModelFactory;

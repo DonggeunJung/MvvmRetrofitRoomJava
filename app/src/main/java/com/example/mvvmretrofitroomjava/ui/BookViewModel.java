@@ -1,5 +1,6 @@
 package com.example.mvvmretrofitroomjava.ui;
 
+import androidx.fragment.app.FragmentActivity;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.ViewModel;
 import com.example.mvvmretrofitroomjava.data.Book;
@@ -19,7 +20,7 @@ public class BookViewModel extends ViewModel {
     }
 
     // Request Card data list to Repository
-    public void reqBooks() {
-        repository.reqBooks();
+    public void reqBooks(FragmentActivity viewOwner) {
+        repository.reqBooks(viewOwner);
     }
 }
