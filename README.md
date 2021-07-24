@@ -15,7 +15,7 @@
 3. LiveData
 4. Observer
 5. DataBinding
-6. Repository
+6. Repository + abstract class
 7. Retrofit
 8. Room
 9. Dagger
