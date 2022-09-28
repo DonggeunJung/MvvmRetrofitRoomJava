@@ -19,10 +19,11 @@
 7. Retrofit
 8. Room
 9. Dagger
+10. Java
 
 
 < Additional Infomation >
 
-GitHub Link : https://github.com/DonggeunJung/RetrofitJsonEx
+GitHub Link : https://github.com/DonggeunJung/MvvmRetrofitRoomJava
 
 Any question => Email : topsan72@gmail.com / Author : Donggeun Jung (Dennis)
