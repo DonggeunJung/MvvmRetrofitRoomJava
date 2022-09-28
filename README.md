@@ -5,7 +5,7 @@
 [Image1 : Book title list parsing from Server JSON data]
 
 <div>
-<img src="https://github.com/DonggeunJung/MvvmRetrofitRoomJava/blob/main/MvvmRetrofitRoomJava_ScreenShot_01.png?raw=true width="200px"></img>
+<img src="https://github.com/DonggeunJung/MvvmRetrofitRoomJava/blob/main/MvvmRetrofitRoomJava_ScreenShot_01.png?raw=true width="360px" height="600px"></img>
 </div>
 
 
